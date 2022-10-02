@@ -25,7 +25,7 @@
             and = minVal
         }
         if (i==1){
-            and1 = minVal
+            and1 = (minVal*(and/100))
         }
         if (i==2){
             and2 = minVal
