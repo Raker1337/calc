@@ -1,0 +1,219 @@
+@import url("font/stylesheet.css") ;
+@import url("font/stylesheet2.css");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nekst';
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.title{
+    margin: 12px 0 32px;
+}
+.wrap{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+.sum{color: #575757;
+    width: 280px;
+    margin-bottom: 29px;
+   
+}
+.pay{color: #575757;
+    width: 280px;
+    margin-bottom: 32px;
+}
+h1{
+    margin: 0;
+    font-size: 34px;
+}
+h2{
+    margin: 0;
+    font-size: 22px;
+   
+}
+h4{
+    margin: 0;
+    font-size: 22px;
+   
+}
+.button{
+    display: block;
+    background-color: #FF9514;
+width: 280px;
+height: 60px;
+border-radius: 40px;
+}
+.button:hover{
+    background-color: #111111;
+}
+.button:active{
+    background-color: #575757;
+}
+.button:disabled{
+    background-color: #ff95146a;
+}
+h3{
+    line-height: 25px;
+    color: white;
+    text-align: center;
+}
+
+.mark{
+    font-weight: 900;
+    text-align: center;
+    border-radius: 12px;
+    width: 67px;
+    height: 48px;
+    position: relative;
+left: 75%;
+bottom:52px;
+    background-color: #e0e0e0;
+    line-height: 48px;
+    font-size: 22px;
+}
+.field{
+    margin-bottom: 20px;
+}
+.markrub{
+    text-align: center;
+    border-radius: 12px;
+    width: 35px;
+    background-color: #e0e0e0;
+    position: relative;
+    right: 10px;
+}
+a:active,a:hover,a{
+    text-decoration: none;
+}
+.price-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+    justify-content: space-between;
+}
+input[type='number']{
+    padding: 20px;
+    font-weight: 900;
+    font-size: 22px;
+    font-family: 'Nekst';
+    text-align: left;
+    width: 280px;
+
+    height: 60px;
+    border-radius: 16px;
+    background-color: #f3f3f4;
+    border: none;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button
+{
+   -webkit-appearance:none
+
+}
+.range-input{
+    left: 20px;
+    bottom: 2px;
+position: relative;
+}
+.range-input input{
+    -webkit-appearance: none;
+    position: absolute;
+    top: -3px;
+    height: 0px;
+    width: 85%;
+    pointer-events: none;
+    
+}
+input[type="range"]::-webkit-slider-thumb{
+    z-index: 2;
+    pointer-events: auto;
+    border-radius: 100px;
+    -webkit-appearance: none;
+    width: 20px;height: 20px;background: #FF9514; 
+    
+}
+.slider{
+    position: relative;
+    margin: auto;
+    bottom: 2px;
+    width: 85%;
+    height: 2px;
+    background-color: #e2e2e2;
+}
+.slider .progress{
+    position: relative;
+    height: 2px;
+    bottom: 48px;
+    width: 5%;
+    background-color: #FF9514;
+}
+
+
+.input[type="range"]::-ms-fill-lower{
+    background-color: black !important
+}
+.input[type="range"]::-ms-fill-upper{
+    background-color: black !important
+}
+@media screen and (min-width:768px) {
+    .slider .progress{width: 1%;}
+    .range-input input{width: 88%;}
+    input[type="range"]::-webkit-slider-thumb{
+        margin-left: 20px;
+    }
+    .mark{
+        bottom: 58px;
+        left:95%
+    }
+    input[type='number']{
+        width: 696px;
+        height: 68px;
+        
+    }
+    .button{
+        width: 345px;
+        height: 68px;
+    }
+    input{      font-size: 30px;
+
+    }
+    h3{
+        line-height: 30px;
+  
+    }
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        font-size: 54px;
+    }
+}
+@media screen and (min-width:1024px) {    input[type='number']{
+    width: 928px;
+    
+}
+input[type="range"]::-webkit-slider-thumb{
+    margin-left: 35px;
+}}
+@media screen and (min-width:1440px) {    input[type='number']{
+    width: 427px;
+    
+}
+.mark{
+    left:85%
+}
+input[type="range"]::-webkit-slider-thumb{
+    margin-left: 0;
+}
+ .price-input{
+        width: 100%;
+    }}
