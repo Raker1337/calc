@@ -168,7 +168,11 @@ input[type="range"]::-webkit-slider-thumb{
     .slider .progress{width: 1%;}
     .range-input input{width: 88%;}
     input[type="range"]::-webkit-slider-thumb{
+        transition: 0.2s;
         margin-left: 20px;
+    }
+    input[type="range"]::-webkit-slider-thumb:active{
+        transform: scale(1.5);
     }
     .mark{
         bottom: 58px;
